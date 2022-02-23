@@ -8,7 +8,7 @@ contract FunkyCrocs is ERC721Enumerable, Ownable {
     using Address for address;
     
     // Starting and stopping sale, presale and whitelist
-    bool public saleActive = true;
+    bool public saleActive = false;
     bool public whitelistActive = false;
     bool public presaleActive = false;
 
