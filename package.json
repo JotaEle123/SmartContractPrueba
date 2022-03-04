@@ -3,7 +3,7 @@
     "@openzeppelin/contracts": "^4.5.0",
     "@truffle/hdwallet-provider": "^1.7.0",
     "dotenv": "^16.0.0",
-    "truffle": "^5.5.1"
+    "truffle": "^5.5.2"
   },
   "dependencies": {
     "truffle-hdwallet-provider": "^1.0.17"

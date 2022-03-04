@@ -25,7 +25,7 @@ contract FunkyCrocs is ERC721Enumerable, Ownable {
     uint256 public constant MAX_MINT_PER_TX = 5;
 
     // The base link that leads to the image / video of the token
-    string public baseTokenURI = "https://APINFTTest.melocomptro.online/";
+    string public baseTokenURI = "https://apinfttest.melocomptro.online/";
 
     // Team addresses for withdrawals
     address public a1;
@@ -137,7 +137,7 @@ contract FunkyCrocs is ERC721Enumerable, Ownable {
 
     // Set team addresses
     function setAddresses(address[] memory _a) public onlyOwner {
-        a1 = _a[0x9baA0005AB7E6A279bd90e86Bef6832080C3d5B5];
+        a1 = _a[0];
         
     }
 

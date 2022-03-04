@@ -13,7 +13,9 @@ module.exports = {
 
     ropsten: {
       provider: function () {
-        return new HDWalletProvider(process.env.PRIVATE_KEY, process.env.ROPSTEN_RPC_URL);
+        return new HDWalletProvider(process.env.PRIVATE_KEY , process.env.ROPSTEN_RPC_URL);
+        /* process.env.ROPSTEN_RPC_URL);
+           process.env.PRIVATE_KEY*/
       },
       network_id: 3,
       skipDryRun: true,
