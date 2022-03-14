@@ -2,9 +2,9 @@ body {
   background: #00000a;  /* fallback for old browsers */
  /* background: -webkit-linear-gradient(to right, #00001a, #53585c);*/  /* Chrome 10-25, Safari 5.1-6 */
  /* background: linear-gradient(to right, #00001a, #53585c); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
- background-image: -webkit-linear-gradient url("/img/wallpaperbetter.jpg");  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: linear-gradient url("/img/wallpaperbetter.jpg");  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/* background-image: url("/img/wallpaperbetter.jpg"); */
+background: -webkit-linear-gradient ();  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient ();  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image: url("/img/wallpaperbetter.jpg");
 background-position: center center; 
 background-repeat: no-repeat;
 background-size: cover;
