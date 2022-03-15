@@ -35,7 +35,7 @@ contract FunkyCrocs is ERC721Enumerable, Ownable {
     mapping (address => uint256) public whitelistReserved;
 
     constructor () ERC721 ("Funky Crocs", "FNK") {
-        price = initial_price;
+        price = 0.001;
     }
 
     // Override so the openzeppelin tokenURI() method will use this method to create the full tokenURI instead
