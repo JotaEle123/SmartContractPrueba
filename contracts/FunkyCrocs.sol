@@ -16,7 +16,7 @@ contract FunkyCrocs is ERC721Enumerable, Ownable {
     uint256 public reserved = 2;
 
     // Price of each token
-    uint256 public initial_price = 0.001 ether;
+    uint256 public initial_price = 0.04 ether;
     uint256 public price;
 
     // Maximum limit of tokens that can ever exist
@@ -131,8 +131,8 @@ contract FunkyCrocs is ERC721Enumerable, Ownable {
     }
 
     // Set a different price in case ETH changes drastically
-    function setPrice(uint256 newPrice) public onlyOwner {
-        price = newPrice;
+    function setPrice(uint256 0.001) public onlyOwner {
+        price = 0.001;
     }
 
     // Set team addresses
