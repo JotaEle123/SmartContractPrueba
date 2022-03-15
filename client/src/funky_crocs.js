@@ -1,6 +1,6 @@
 const NETWORK_ID = 3
 
-var NFT_PRICE = null
+var NFT_PRICE = 0.001
 var PRESALE_PRICE = null
 var MAX_SUPPLY = null
 var MAX_PRESALE_SUPPLY = null
@@ -276,7 +276,7 @@ const setBaseURI = async () => {
 }
 
 const setPrice = async () => {
-  const result = await contract.methods.setPrice("0.001")//(10000000)
+  const result = await contract.methods.setPrice("0")//(10000000)
     .send({ from: accounts[0], gas: 0, value: 0 })
     .on('transactionHash', function(hash){
       document.getElementById("web3_message").textContent="Minting...";
