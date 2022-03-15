@@ -131,8 +131,8 @@ contract FunkyCrocs is ERC721Enumerable, Ownable {
     }
 
     // Set a different price in case ETH changes drastically
-    function setPrice(uint256 0.001) public onlyOwner {
-        price = 0.001;
+    function setPrice(uint256 newPrice) public onlyOwner {
+        price = newPrice;
     }
 
     // Set team addresses
