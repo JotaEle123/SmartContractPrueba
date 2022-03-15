@@ -1,6 +1,6 @@
 const NETWORK_ID = 3
 
-var NFT_PRICE = 0.001
+var NFT_PRICE = "0.001"
 var PRESALE_PRICE = null
 var MAX_SUPPLY = null
 var MAX_PRESALE_SUPPLY = null
