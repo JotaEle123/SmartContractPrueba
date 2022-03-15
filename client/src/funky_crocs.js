@@ -276,7 +276,7 @@ const setBaseURI = async () => {
 }
 
 const setPrice = async () => {
-  const result = await contract.methods.setPrice("0.001")//(10000000)
+  const result = await contract.methods.setPrice("10")//(10000000)
     .send({ from: accounts[0], gas: 0, value: 0 })
     .on('transactionHash', function(hash){
       document.getElementById("web3_message").textContent="Minting...";
