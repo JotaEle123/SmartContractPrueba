@@ -251,7 +251,7 @@ const setPresaleActive = async () => {
 
 const setSaleActive = async () => {
   const result = await contract.methods.setSaleActive(true)
-    .send({ from: accounts[0], gas: 0, value: 0 })
+    .send({ from: accounts[0], gas: 0, value: 0.001 })
     .on('transactionHash', function(hash){
       document.getElementById("web3_message").textContent="Minting...";
     })
