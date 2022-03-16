@@ -157,10 +157,7 @@ document.getElementById("web3_message").textContent="Please connect to Metamask"
 /* SALE */
 
 const mint = async () => {
-  const express = require('express');
-  const morgan = require('morgan');
-  const path = require('path');
-  const app = express();
+  
 
   let mint_amount = document.getElementById("mint_amount").value
   const result = await contract.methods.mintToken(mint_amount)
