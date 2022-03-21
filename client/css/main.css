@@ -54,6 +54,24 @@ background-size: cover;
   font-size:25px;
 }
 
+.token {
+  text-transform: uppercase;
+  font-family: 'Bangers', cursive;
+  font-size:50px;
+}
+
+.token-dos {
+  text-transform: uppercase;
+  font-family: 'Bangers', cursive;
+  font-size:100px;
+}
+
+.token-tres {
+  text-transform: uppercase;
+  font-family: 'Bangers', cursive;
+  font-size:20px;
+}
+
 header img {
   width: 60%;
 }
