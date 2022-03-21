@@ -1,27 +1,84 @@
 body {
   background: #00000a;  /* fallback for old browsers */
- /* background: -webkit-linear-gradient(to right, #00001a, #53585c);*/  /* Chrome 10-25, Safari 5.1-6 */
- /* background: linear-gradient(to right, #00001a, #53585c); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
-background: -webkit-linear-gradient ();  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient ();  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background: -webkit-linear-gradient(to right, #ae05f1, #e42bf5);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #ae05f1, #e42bf5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /*background: -webkit-linear-gradient ();  /* Chrome 10-25, Safari 5.1-6 */
+ /* background: linear-gradient ();  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-image: url("/img/wallpaperbetter.jpg");
 background-position: center center; 
 background-repeat: no-repeat;
 background-size: cover;
 }
 
-.navbar-brand {
-  font-family: 'Spicy Rice', cursive;
+.navbar-bra {
+  font-family: 'Bangers', cursive;
+  color:#ffee07;
   font-size: 1.5rem;
+  }
+
+  .navbar-bra-num {
+    font-family: 'Bangers', cursive;
+    color:#ffee07;
+    font-size: 3.5rem;
+    }  
+
+.colo {
+  color:#ffee07;
 }
+
+.marg-petit {
+  padding-top: 20px;
+}
+
+.marg {
+  padding-top: 50px;
+}
+
+.marg-plus {
+  padding-top: 150px;
+}
+
+.navbar-brand-y {
+  font-family: 'Bangers', cursive;
+  color:#ffee07;
+  text-decoration: none;
+  font-size: 3.9rem;
+  }
+
+
 
 .nav-link {
   text-transform: uppercase;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Bangers', cursive;
+  color:#ffee07;
+  font-size:25px;
 }
 
 header img {
   width: 60%;
 }
+
+/* FONDO LANDING PAGE    */
+.back-col-h {
+
+  background: -webkit-linear-gradient(to right, #ae05f1, #e42bf5);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #ae05f1, #e42bf5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* FONDO TITULOS */
+.fon-bang{
+  font-family: 'Bangers', cursive;
+  color:#ffee07;
+}
+
+.fon-block {
+  color:rgb(20, 19, 19);
+ padding-left: 20%;
+}
+
+.pad-lef{
+  padding-left: 20%;
+}
+
 
 

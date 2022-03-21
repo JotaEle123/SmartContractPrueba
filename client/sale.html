@@ -21,6 +21,11 @@
     <!-- FONT-AWESOME-->
     <script src="https://kit.fontawesome.com/96a42ce25c.js" crossorigin="anonymous"></script>
 
+    <!-- GOOGLE FONTS - BANGERS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
     <! -- CUSTOM CSS -->
         <link rel="stylesheet" href="/css/main.css">
 
@@ -28,9 +33,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">NFT Collection test</a>
+            <a class="navbar-brand-y" href="/"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,13 +43,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-home"></i> Home</a>
+                        <a class="nav-link text-warning active" aria-current="page" href="/"><i class="fas fa-home"></i> Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-building"></i> About</a>
+                        <a class="nav-link text-warning" href="#avatars"><i class="fas fa-user"></i> avatars </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact"><i class="fas fa-envelope"></i> White-list Request</a>
+                        <a class="nav-link text-warning" href="#kingdoms"><i class="fas fa-envelope"></i> Kingdoms </a>
                     </li>
 
                 </ul>
@@ -54,58 +59,140 @@
 
     <div class="container-fluid">
         <div class="row text-white p-5">
-            <div class="col-sm-6 text-center">
+            <div class="col-sm-6 text-center fon-bang">
+                
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="1000">
+                    <div class="carousel-inner marg">
+                        <h1 class="navbar-bra-num">AVATAR MAGIG WORLD CLUB</h1>
+                        <div class="carousel-item active pad-lef" data-bs-interval="1000">
                             <img src="/img/0.jpg" class="d-block w-75 rounded-circle border border-success border border-5" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="1000">
+                        <div class="carousel-item pad-lef" data-bs-interval="1000">
                             <img src="/img/1.jpg" class="d-block w-75 rounded-circle border border-success border border-5" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="1000">
+                        <div class="carousel-item pad-lef" data-bs-interval="1000">
                             <img src="/img/2.jpg" class="d-block w-75 rounded-circle border border-success border border-5" alt="...">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 p-5">
-                <input id="connect_button" type="button" class="btn btn-primary navbar-brand fs-1" value="connect"
+            <div class="col-sm-6">
+                <div class ="marg-plus pad-lef">
+                <input id="connect_button" type="button" class="btn btn-primary navbar-bra fs-1" value="connect"
                     onclick="connectWallet()">
-                <p><span id="web3_message">Loading web3...</span></p>
-                
-                <select id="mint_amount" class="navbar-brand fs-1 p-3 bg-transparent text-white">
-      <!--  <option selected>Select amount</option> -->
-                    <option class="navbar-brand fs-1 bg-secondary" value="1">1</option>
-                    <option class="navbar-brand fs-1 bg-secondary" value="2">2</option>
-                    <option class="navbar-brand fs-1 bg-secondary" value="3">3</option>
-                    <option class="navbar-brand fs-1 bg-secondary" value="4">4</option>
+                <p><span class="navbar-bra" id="web3_message">Loading web3...</span></p>
+                <div class="row d-inline-flex p-2">
+                <select id="mint_amount" class="navbar-bra-num bg-transparent">
+                <option selected>max 4 FNT to Mint</option>
+                    <option class="navbar-bra-num bg-success" value="1">1</option>
+                    <option class="navbar-bra-num bg-success" value="2">2</option>
+                    <option class="navbar-bra-num bg-success" value="3">3</option>
+                    <option class="navbar-bra-num bg-success" value="4">4</option>
                 </select>
-                <input type=button class="btn btn-primary navbar-brand fs-1" value="mint!"  onclick="mint()">
-                
-                <p class="navbar-brand fs-1" id="nft_balance">...</p>
-                <p class="navbar-brand fs-1" id="total_mint"></p>
-                <p class="navbar-brand fs-1" id="price"></p>
+                <input type=button class="btn btn-primary navbar-bra fs-1" value="mint!"  onclick="mint()">
+                </div>
+                <p class="navbar-bra fs-1" id="nft_balance">...</p>
+                <p class="navbar-bra fs-1" id="total_mint"></p>
+                <p class="navbar-bra fs-1" id="price"></p>
+            </div>
             </div>
         </div>
     </div>
 
     <!-- section one -->
-    <div class="container-fluid" id="about">
-        <div class="row bg-dark text-white p-5 text-center">
-          <div class="col-sm-6">
-            <h3>The most subscribed Youtuber</h3>
+   <!-- <div class="container-fluid" id="about">
+        <div class="row back-col-h fon-bang fs-1 p-5 text-center">
+          <div class="col-sm-12">
+            <h1>AVATAR MAGIC WORLD CLUB</h1>
             <p>
-              <span>Elit exercitationem id illo sit distinctio. Deserunt ut debitis voluptates mollitia dignissimos eligendi vel quidem itaque dolores ratione ut. Soluta accusantium dolor nemo suscipit rerum. Aliquid quasi excepturi provident eos.</span>
-            </p>
+              
+          </div>
+          
+        </div>
+      </div>  -->
+
+
+       <!-- section two -->
+    <div class="container-fluid" id="avatars">
+        <div class="row back-col-h fon-bang p-5 text-center">
+          <div class="col-sm-6">
+            <h1 class="navbar-bra-num">AVATAR MAGIC WORLD</h1>
+            <h3 class="fon-block marg">
+               
+              <span >The Avatar Magic World Club is a collection of 10,000 unique Avatar Magic NFTs unique digital collectibles living on the Ethereum blockchain. they have more than 200 traits.
+
+                This magic world it's formed by six kingdoms and each avatar belongs to a linage.
+                
+                Your Magic Avatar doubles as your Avatar Magic World Club membership card, and grants access to members-only benefits, the first of which is access to THE MAGIC AVATAR WORLD on the future. These wonderful and magical creatures will take care of your karma and protect your environment. They have diferent Properties and Levels. </span>
+              </h3>
           </div>
           <div class="col-sm-6">
-            <i class="fab fa-discord fa-10x"></i> 
+              <div class="pad-lef marg">
             
+            <img src="/img/3.jpg" class="d-block w-50 rounded-circle border border-success border border-5" alt="...">
+              </div>
           </div>
         </div>
       </div>
 
+      <!-- section three -->
+    <div class="container-fluid" id="kingdoms">
+        <div class="row back-col-h fon-bang p-5 text-center">
+            <h1 class="navbar-bra-num">SIX AVATAR KINGDOM</h1>
+            <div class="col-sm-4">
+                <div class="">
+            
+                    <img class="rounded rounded-3 marg-petit" src="img/ARNOR.jpg">
+                    
+                    <img class="rounded rounded-3 marg-petit" src="img/NANDOR.jpg">
+                         
+                          
+                </div>
+            </div>
+        
+    
+          <div class="col-sm-4">
+            <div class="rounded rounded-3">
+            
+                <img class="rounded rounded-3 marg-petit" src="img/EREGION.jpg">
+                
+                <img class="rounded rounded-3 marg-petit" src="img/NOLDOR.jpg">
+                     
+                      
+            </div>
+            
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+            
+                <img class="rounded rounded-3 marg-petit" src="img/LINDON.jpg">
+                
+                <img class="rounded rounded-3 marg-petit" src="img/SINDAR.jpg">
+                     
+                      
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+
+
+<!-- section four -->
+<div class="container-fluid" id="about">
+    <div class="row bg-dark text-white p-5 text-center">
+      <div class="col-sm-6">
+        <h3>The most subscribed Youtuber</h3>
+        <p>
+          <span>Elit exercitationem id illo sit distinctio. Deserunt ut debitis voluptates mollitia dignissimos eligendi vel quidem itaque dolores ratione ut. Soluta accusantium dolor nemo suscipit rerum. Aliquid quasi excepturi provident eos.</span>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <i class="fab fa-discord fa-10x"></i> 
+        
+      </div>
+    </div>
+  </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js"></script>
     <script type="text/javascript" src="src/funky_crocs.js"></script>

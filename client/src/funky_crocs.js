@@ -98,16 +98,16 @@ async function loadAccount() {
   accounts = await web3.eth.getAccounts()
   balance = await contract.methods.balanceOf(accounts[0]).call()
   document.getElementById("web3_message").textContent="Connected"
-  document.getElementById("web3_message").className="navbar-brand fs-1 text-success"
+  document.getElementById("web3_message").className="navbar-bra fs-1 text-success"
 
   document.getElementById("connect_button").style.display = "none"
   document.getElementById("nft_balance").textContent="You have " + balance + " Fairies"
-  document.getElementById("nft_balance").className="navbar-brand fs-1"
+  document.getElementById("nft_balance").className="navbar-bra fs-1"
 }
 
 async function loadDapp() {
   document.getElementById("web3_message").textContent="Connecting..."
-  document.getElementById("web3_message").className="navbar-brand fs-1"
+  document.getElementById("web3_message").className="navbar-bra fs-1"
   var awaitWeb3 = async function () {
     web3 = await getWeb3()
     web3.eth.net.getId((err, netId) => {
@@ -122,12 +122,12 @@ async function loadDapp() {
           available_presale = MAX_PRESALE_SUPPLY - total_mint
           if(document.getElementById("total_mint"))
             document.getElementById("total_mint").textContent = available + "/" + MAX_SUPPLY + " available"
-            document.getElementById("total_mint").className="navbar-brand fs-1"
+            document.getElementById("total_mint").className="navbar-bra fs-1"
           if(document.getElementById("total_mint_presale"))
             document.getElementById("total_mint_presale").textContent = available_presale + "/" + MAX_PRESALE_SUPPLY + " available"
           if(document.getElementById("price"))
             document.getElementById("price").textContent= "Price: " + web3.utils.fromWei(NFT_PRICE) + " ETH"
-            document.getElementById("price").className="navbar-brand fs-1"
+            document.getElementById("price").className="navbar-bra fs-1"
           if(document.getElementById("presale_price"))
             document.getElementById("presale_price").textContent= "Presale Price: " + web3.utils.fromWei(PRESALE_PRICE) + " ETH"
           web3.eth.getAccounts(function(err, accounts){
