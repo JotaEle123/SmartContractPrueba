@@ -98,10 +98,10 @@ async function loadAccount() {
   accounts = await web3.eth.getAccounts()
   balance = await contract.methods.balanceOf(accounts[0]).call()
   document.getElementById("web3_message").textContent="Connected"
-  document.getElementById("web3_message").className="navbar-bra fs-1 text-success"
+  document.getElementById("web3_message").className="navbar-bra fs-1 text-warning"
 
   document.getElementById("connect_button").style.display = "none"
-  document.getElementById("nft_balance").textContent="You have " + balance + " Fairies"
+  document.getElementById("nft_balance").textContent="You have " + balance + " Avatar Magic"
   document.getElementById("nft_balance").className="navbar-bra fs-1"
 }
 
