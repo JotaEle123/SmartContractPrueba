@@ -118,7 +118,13 @@ header img {
   padding-left: 20%;
 }
 
+.line-dis {
+  display:inline-flex;
+}
 
+.line-bloc {
+  display:inline-flexbox;
+}
 
   
 
