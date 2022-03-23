@@ -127,6 +127,8 @@ header img {
  
  width: 60%;
  text-align: justify;
+ text-indent: 2%;
+ line-height: 155%;
 }
 
 .te-centro {
@@ -134,6 +136,13 @@ header img {
   width:60%;
   margin: auto;
   text-align: justify;
+  line-height: 155%;
+}
+
+.te-justi {
+  text-align: justify;
+  text-indent: 2%;
+  
 }
 
   
