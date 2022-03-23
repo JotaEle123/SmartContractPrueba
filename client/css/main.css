@@ -4,7 +4,8 @@ body {
  background: linear-gradient(to right, #ae05f1, #e42bf5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  /*background: -webkit-linear-gradient ();  /* Chrome 10-25, Safari 5.1-6 */
  /* background: linear-gradient ();  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-width:auto ;
+margin: auto;
+
 
 }
 
@@ -111,7 +112,7 @@ header img {
 
 .fon-block {
   color:rgb(20, 19, 19);
- padding-left: 20%;
+ 
 }
 
 .pad-lef{
@@ -122,8 +123,17 @@ header img {
   display:inline-flex;
 }
 
-.line-bloc {
-  display:inline-flexbox;
+.equipo {
+ 
+ width: 60%;
+ text-align: justify;
+}
+
+.te-centro {
+  
+  width:60%;
+  margin: auto;
+  text-align: justify;
 }
 
   
